@@ -1,0 +1,10 @@
+@startuml
+    class FactoryProduct{
+        +<<template>>Prod* factoryMethod()
+    }
+    class Producto{
+        +void operation();
+    }
+    Producto ---|> FactoryProduct
+    Producto <--- FactoryProduct : factoryMethd retorna Proucto
+@enduml
